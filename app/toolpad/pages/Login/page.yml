@@ -1,0 +1,42 @@
+apiVersion: v1
+kind: page
+spec:
+    id: g4OY4Hz
+    title: Login
+    content:
+        - component: Paper
+          name: paper
+          children:
+              - component: Form
+                name: form
+                props:
+                    formControlsFullWidth: true
+                    hasResetButton: true
+                children:
+                    - component: Text
+                      name: formTitle
+                      props:
+                          value: Login
+                          variant: h4
+                    - component: TextField
+                      name: emailField
+                      props:
+                          label: Email
+                          fullWidth: true
+                          name: email
+                          isRequired: true
+                    - component: TextField
+                      name: passwordField
+                      props:
+                          password: true
+                          label: Password
+                          name: password
+                          isRequired: true
+                          fullWidth: true
+          layout:
+              verticalAlign: start
+          props:
+              elevation: 2
+              sx:
+                  maxWidth: 60vw
+                  margin: auto
